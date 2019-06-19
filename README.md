@@ -2,7 +2,7 @@ Heroku buildpack: Hugo
 ===
 
 This is a [Heroku buildpack](https://devcenter.heroku.com/articles/buildpacks)
-for sites powered by [Hugo](https://github.com/spf13/hugo).
+for sites powered by [Hugo](https://github.com/gohugoio/hugo).
 It uses the latest stable version of Hugo.
 
 Usage
@@ -11,19 +11,19 @@ Usage
 Create a Heroku application using this buildpack:
 
 ```bash
-$ heroku create --buildpack https://github.com/roperzh/heroku-buildpack-hugo.git
+$ heroku create --buildpack https://github.com/ikigai-company/heroku-buildpack-hugo.git
 ```
 
 or configure your existent application:
 
 ```bash
-$ heroku buildpacks:set BUILDPACK_URL="https://github.com/roperzh/heroku-buildpack-hugo.git"
+$ heroku buildpacks:set BUILDPACK_URL="https://github.com/ikigai-company/heroku-buildpack-hugo.git"
 ```
 
 Optionally, define a `HUGO_VERSION` Config Var to specify the Hugo version you wish to use:
 
 ```bash
-$ heroku config:set HUGO_VERSION=0.25
+$ heroku config:set HUGO_VERSION=0.55.6
 ```
 
 Then simply git push to heroku and open your application!
@@ -48,7 +48,7 @@ https://github.com/spf13/hyde.git
 ```
 
 [Here](http://immense-hollows-6319.herokuapp.com/) is an example application,
-and [here](https://github.com/roperzh/example-heroku-buildpack-hugo) is the code.
+and [here](https://github.com/ikigai-company/heroku-buildpack-hugo) is the code.
 
 Alternative method
 ---
